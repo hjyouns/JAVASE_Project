@@ -18,7 +18,7 @@ public class Student {
         this.grade = grade;
     }
 
-    // 2. Getter와 Setter 작성
+    // 2. Getter와 Setter로 작성
     public String getStudentId() { return studentId; }
     public void setStudentId(String studentId) { this.studentId = studentId; }
 
@@ -40,6 +40,7 @@ public class Student {
         }
     }
 
+    
     @Override
     public String toString() {
         return name + " / " + major + " / " + grade + "학년";
