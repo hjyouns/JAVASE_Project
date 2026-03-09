@@ -7,10 +7,12 @@ public class PersonEntity {
 	private String address;
 	private String phone;
 
+	//default constructor
 	public PersonEntity() {
 		
 	}
-
+	
+	//overloaded constructor 
 	public PersonEntity(String name, String ssn, String address, String phone) {
 //		this.name = name;
 //		this.ssn = ssn;
@@ -47,10 +49,10 @@ public class PersonEntity {
 		//0508073347558
 		char genderNum = ssn.charAt(6);
 		if(genderNum == '1' || genderNum == '3') {
-			//this.gender = '³²';
-			setGender('남');
-		}else {
-			setGender('여');
+			//this.gender = '여자';
+			setGender('여자');
+		}else {  //2, 4
+			setGender('남자');
 		}
 	}
 
